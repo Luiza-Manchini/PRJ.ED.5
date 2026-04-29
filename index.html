@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRJ.ED.5 - Navegador Web</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="dist/main.js" defer></script>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div>
+        <p class="rotulo">Estrutura de Dados</p>
+        <h1>Navegador Web Simples</h1>
+      </div>
+      <p class="subtitulo">PRJ.ED.5 - iframe, histórico, voltar e favoritos</p>
+    </header>
+
+    <main class="layout">
+      <section class="navegador" aria-label="Área de navegação">
+        <form id="form-navegacao" class="barra-navegacao">
+          <input
+            id="campo-url"
+            type="text"
+            placeholder="Digite uma URL. Ex: example.com"
+            autocomplete="off"
+          />
+          <button type="submit">Acessar</button>
+          <button id="botao-voltar" type="button">Voltar</button>
+          <button id="botao-favoritar" type="button">Favoritar</button>
+        </form>
+
+        <p id="mensagem" class="mensagem">
+          Dica: alguns sites bloqueiam abertura dentro de iframe por seguranca.
+        </p>
+
+        <iframe
+          id="visualizador"
+          title="Visualizador de paginas"
+          src="about:blank"
+        ></iframe>
+      </section>
+
+      <aside class="painel" aria-label="Historico e favoritos">
+        <section class="cartao">
+          <div class="titulo-lista">
+            <h2>Historico</h2>
+            <span id="contador-historico">0 itens</span>
+          </div>
+          <ul id="lista-historico" class="lista-vazia">
+            <li>Nenhuma pagina visitada.</li>
+          </ul>
+        </section>
+
+        <section class="cartao">
+          <div class="titulo-lista">
+            <h2>Favoritos</h2>
+            <span id="contador-favoritos">0 itens</span>
+          </div>
+          <ul id="lista-favoritos" class="lista-vazia">
+            <li>Nenhum favorito salvo.</li>
+          </ul>
+        </section>
+      </aside>
+    </main>
+  </body>
+</html>

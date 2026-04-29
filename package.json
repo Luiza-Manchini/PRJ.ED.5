@@ -1,0 +1,12 @@
+{
+  "name": "prj-ed-5-browser",
+  "version": "1.0.0",
+  "description": "Projeto PRJ.ED.5 - navegador web simples com estruturas de dados",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}
